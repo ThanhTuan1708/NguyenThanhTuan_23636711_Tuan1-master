@@ -1,0 +1,43 @@
+.app {
+  width: min(900px, 100%);
+  margin: 0 auto;
+  padding: 72px 24px;
+  box-sizing: border-box;
+}
+
+.eyebrow,
+.role {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.eyebrow { margin: 0 0 16px; }
+.description { max-width: 560px; margin-bottom: 42px; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.user-card h2 { margin: 8px 0 10px; }
+.user-card p { margin: 0 0 12px; }
+.user-card .role { margin: 0; }
+.user-card strong { color: var(--text-h); }
+.admin-card { border-color: var(--accent); }
+
+@media (max-width: 600px) {
+  .app { padding: 48px 20px; }
+  .cards { grid-template-columns: 1fr; }
+}

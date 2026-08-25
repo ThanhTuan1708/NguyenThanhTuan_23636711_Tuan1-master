@@ -1,0 +1,52 @@
+.counter-page {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.subtitle {
+  margin: 0 0 12px;
+}
+
+.counter-card {
+  width: min(380px, 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  background: var(--bg);
+}
+
+.counter-card h2 {
+  margin-top: 0;
+}
+
+.value {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 16px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--accent-bg);
+  color: var(--text-h);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  border-color: var(--accent-border);
+}
